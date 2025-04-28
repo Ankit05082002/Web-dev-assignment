@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Invoice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .invoice-container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      border: 5px solid orange;
+    }
+
+    header {
+      position: relative;
+    }
+
+    .logo-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-text {
+      font-size: 16px;
+      line-height: 1.5
+      ;
+      font-weight: bold;
+    }
+
+    .orange-banner {
+      width: 120px;
+      height: 120px;
+      background: orange;
+      clip-path: polygon(70% 0%, 100% 0, 100% 100%, 30% 100%);
+    }
+
+    .invoice-details p {
+      margin: 5px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .invoice-summary {
+      font-size: 14px;
+    }
+
+    .invoice-summary .total {
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .page-number {
+      background: #333;
+      color: #fff;
+      display: inline-block;
+      padding: 4px 12px;
+      margin-top: 10px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="invoice-container">
+    <header>
+      <div class="logo-section">
+        <div class="logo-text">
+          PHYSICS WALLAH<br>
+          KLJ Noida one, B 8, Block B, Industrial Area,<br>
+          Sector 62, Noida, Uttar Pradesh 201309
+        </div>
+        <div class="orange-banner"></div>
+      </div>
+    </header>
+
+    <section class="invoice-details">
+      <p><strong>Invoice to:</strong> Pranav Shah</p>
+      <p><strong>Date:</strong> 24th October 2023</p>
+      <p><strong>Invoice#</strong> PW-Ms1TMSvvLA4VMJ</p>
+      <p><strong>Order#</strong> order_Ms1TMSvvLA4VMJ</p>
+    </section>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>HSN/SAC</th>
+          <th>Sub total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mastering Full Stack Data Analytics</td>
+          <td>965896</td>
+          <td>₹ 15254.24</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <section class="invoice-summary">
+      <p><strong>PLACE OF SUPPLY:</strong> KARNATAKA</p>
+      <p><strong>GST NO:</strong> 29AAFCI3682J1Z4</p>
+      <p><strong>CIN NO:</strong> U80902KA2019PTC126951</p>
+      <p><strong>PAN NO:</strong> AAFCI3682J</p>
+      <hr>
+      <p>SUB Total: ₹ 15254.24</p>
+      <p>CGST(9%): ₹ 1372.88</p>
+      <p>SGST(9%): ₹ 1372.88</p>
+      <p class="total">Grand TOTAL: ₹ 18000.00</p>
+    </section>
+
+    <footer>
+      <p>Thank you for the purchase.</p>
+      <div class="page-number">Page 1 / 1</div>
+    </footer>
+  </div>
+</body>
+</html>
