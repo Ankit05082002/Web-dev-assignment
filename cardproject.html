@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 20px;
+            align-items: center;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            width: 200px;
+        }
+        
+        .card:nth-child(1) { grid-column: 1; grid-row: 1 / span 2; } /* Left Card */
+        .card:nth-child(2) { grid-column: 2; grid-row: 1; } /* Top Middle Card */
+        .card:nth-child(3) { grid-column: 2; grid-row: 2; } /* Bottom Middle Card */
+        .card:nth-child(4) { grid-column: 3; grid-row: 1 / span 2; } /* Right Card */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card card1" style="border-top: 3px solid teal;"> 
+            <h3>Supervisor</h3>
+            <p>Monitors activity to identify project roadblocks</p>
+        </div>
+        <div class="card" style="border-top: 3px solid red;"> 
+            <h3>Team Builder</h3>
+            <p>Scans our talent network to create the optimal team for your project</p>
+        </div>
+        <div class="card" style="border-top: 3px solid orange;"> 
+            <h3>Karma</h3>
+            <p>Regularly evaluates our talent to ensure quality</p>
+        </div>
+        <div class="card" style="border-top: 3px solid blue;"> 
+            <h3>Calculator</h3>
+            <p>Uses data from past projects to provide better delivery estimates</p>
+        </div>
+    </div>
+</body>
+</html>
