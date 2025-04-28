@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body{
+            /* background-color: beige; */
+            /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            background: url('background.jpg') no-repeat center center/cover;;
+        }
+        .signup_container{
+            background-color: white;
+            margin: 2px;
+            padding: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: auto;
+            border-radius: 10px;
+        }
+        input{
+            padding: 8px;
+            border-radius: 5px;
+            /* border-color: whitesmoke; */
+            border: 1px solid #ccc;
+            
+
+        }
+        button{
+            width: 50%;
+            padding: 10px;
+            background: #6cbd3e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 25%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           
+        }
+        h1{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+        }
+        button:hover{
+            background-color:#5aa32c;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup_container">
+        <h1>Sign up</h1>
+        <input title="enter email" type="email" placeholder="Email" required>
+        <div class="name">
+            <input type="name" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+        </div>
+        <input type="password" placeholder="Password">
+        <button type="submit">Sign up</button>
+    </div>
+</body>
+</html>
