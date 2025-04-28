@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+</head>
+<link rel="stylesheet" href="./style1.css">
+<body>
+    <div class="main-container">
+        <div class="container1">
+            <header class="logo">
+                <img src="./webpage sample.webp" width="100px">
+                <h2>Modern Solutions</h2>
+            </header>
+
+            <div class="content">
+                <img src="./wepage 2.webp" >
+                <div class="Text">
+                    <h2>Coming Soon...</h2>
+                    <p>Stay Connected, Stay Updated!</p>
+                </div>
+            </div>
+
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container2">
+            <div class="Countdown">
+                <div class="Timer"><h2>10</h2><p>Days</p></div>
+                <div class="Timer"><h2>18</h2><p>Hours</p></div>
+                <div class="Timer"><h2>36</h2><p>Minutes</p></div>
+                <div class="Timer"><h2>48</h2><p>Seconds</p></div>
+            </div>
+
+        <div class="Subscribe">
+            <h2>Get Updates!</h2>
+            <form>
+                <input type="email" placeholder="Email Address" required>
+                <button type="submit">Send Now</button>
+            </form>
+        </div>
+
+        <div class="Footer">
+            <a href="#">Facebook<img src="#" class="img1" alt=""></a>
+            <a href="#">Twitter<img src="#" alt=""></a>
+            <a href="#">Linkedln<img src="#" alt=""></a>
+           
+        </div>
+    </div>
+    </div>
+</body>
+</html>
